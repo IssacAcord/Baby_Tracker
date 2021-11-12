@@ -32,7 +32,6 @@ const welcomescreen = ({ navigation }) => {
           height: 300, 
           width: 100,
           aspectRatio: .8,
-          //resizeMode: 'contain',
     },
       text:{
           fontFamily: 'Noteworthy',

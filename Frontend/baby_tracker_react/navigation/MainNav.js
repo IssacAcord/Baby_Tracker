@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-
+import options from '../screens/options';
 
 
 function HomeScreen({ navigation }) {
@@ -65,6 +65,7 @@ function MyDrawer() {
     <Drawer.Navigator>
       <Drawer.Screen name="DashBoard" component={HomeScreen} />
       <Drawer.Screen name = "Children" component={HomeScreen}/>
+      <Drawer.Screen name = "Logout" component={options} options={{headerShown: false}} tabBarOptions={{tabBarVisible: false}}/>
     </Drawer.Navigator>
   );
 }

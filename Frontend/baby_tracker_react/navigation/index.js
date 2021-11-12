@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import welcome from '../screens/welcome';
 import SignInScreen from '../screens/signin';
 import options from '../screens/options'
-
+import { MainNav } from './MainNav';
 const stack = createNativeStackNavigator();
 const Navstack = () => {
     return (
@@ -22,6 +22,7 @@ const Navstack = () => {
                 component={SignInScreen}
                 options={{title: 'login'}}
                 />
+                <stack.Screen name = "signedin" component={MainNav} options={{headerShown: false}}/>
             </stack.Navigator>
         
     );

@@ -12,7 +12,7 @@ import Navstack from './navigation';
 export default function App() {
   return (
     <NavigationContainer>
-      <MainNav/>
+      <Navstack/>
     </NavigationContainer>
   );
 }

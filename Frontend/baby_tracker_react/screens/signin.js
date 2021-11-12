@@ -159,7 +159,9 @@ const SignInScreen = ({navigation}) => {
     
                         <View>
                             <View style={styles.textInputContainer}>
-                                <TouchableOpacity style={styles.button} onPress={console.log("")}>
+                                <TouchableOpacity style={styles.button} onPress={() =>
+                                    navigation.navigate('signedin')
+                                    }>
                                     <Text>Login</Text>
                                 </TouchableOpacity>
                             </View>
